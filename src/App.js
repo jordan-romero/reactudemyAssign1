@@ -23,7 +23,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <UserInput onChange={this.usernameChangeHandler}/>
+        <UserInput onChange={this.usernameChangeHandler} username={this.state.users[0].username}/>
         <UserOutput username={this.state.users[0].username}/>
         <UserOutput />
         <UserOutput />
