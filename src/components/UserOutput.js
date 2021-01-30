@@ -1,8 +1,9 @@
 import React from 'react'
 
-const UserOutput = () => {
+const UserOutput = (props) => {
     return (
         <div>
+            <h1>Welcome {props.username}</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ipsum elit, rutrum non tristique tristique, tincidunt ut arcu. Curabitur id justo sit amet lacus viverra finibus in at orci. Cras interdum eleifend pellentesque. Duis eget lorem mollis, sagittis lacus egestas, consequat est. Nunc ut felis sit amet ante consequat commodo. Suspendisse tincidunt dui ante, ut sollicitudin arcu posuere sed. Nam condimentum, mi ut posuere accumsan, est justo rutrum risus, eu ullamcorper metus est vel urna. Cras ut semper mauris. Aliquam id felis ut magna tincidunt congue. Quisque id lorem mollis, rhoncus tellus ac, hendrerit enim. Suspendisse id urna eget velit interdum luctus venenatis id felis. Nullam sollicitudin nunc ut ex elementum, vel porta erat porta. Donec luctus vel nisl in viverra. Maecenas quis ipsum porta, sollicitudin metus sed, blandit nulla. Fusce blandit elit nec ante sodales, quis euismod nulla gravida. Pellentesque vitae dictum dolor.
             </p>
