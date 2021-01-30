@@ -1,5 +1,6 @@
 import './App.css';
 import UserOutput from './components/UserOutput'
+import UserInput  from './components/UserInput'
 
 import React, { Component } from 'react'
 
@@ -10,10 +11,19 @@ export default class App extends Component {
       {username: 'Jordles'},
     ]
   }
+  
+  usernameChangeHandler = (event) => {
+    this.setState({
+      users: [
+        {username: event.target.value},
+      ]
+    })
+  }
 
   render() {
     return (
       <div className="App">
+        <UserInput onChange={this.usernameChangeHandler}/>
         <UserOutput username={this.state.users[0].username}/>
         <UserOutput />
         <UserOutput />
